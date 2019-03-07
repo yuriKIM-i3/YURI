@@ -1,0 +1,49 @@
+1. 깃을 왜 쓰는가?
+	원활한 협업, 중복된 코드생성 방지, 시력이 좋아짐, 수명이 늘어남 등등...
+	
+2. 깃 사용하기
+	1)기본 세팅하기
+		-깃회원가입, git bash설치
+		-git bash에 나의 기본정보 입력하기  (참고사이트: https://alvinalexander.com/git/git-show-change-username-email-address
+		-공유컴퓨터에서 작업하기때문에 수업후 꼭 유저네임 삭제!
+	
+	2)리포지토리와 컴퓨터내의 폴더 연동하기
+		- 폴더입장 후 오른쪽클릭> git bash클릭> 
+		- git init - git remote add origin [레포지토리주소] - git add README.md - git commit -m "first commit" - git push -u origin master 입력하기
+		- .git폴더가 안보일수도 있다 폴더의 보기>옵션에서 숨김폴더 모두 보이기로 설정하면 보임
+		- 두번째로 폴더내용을 푸쉬할때는 git push origin master라고 쓰면 된다 (-u는 빼도 된다는 뜻!)
+		
+	3)깃 브랜치
+		- 깃 브랜치만들기: git branch -b 브랜치이름
+		- 현재 무슨 브랜치 있는지 확인하기: git branch
+		- 브랜치로 이동하기: git checkout 이동하려는브랜치이름
+		- 브랜치를 만듦과 동시에 새브런치로 움직이기: git checkout -b 브랜치이름
+		---여기까지의 과정은 나의 컴퓨터에만 보이는 브랜치 목록이다 이제 인터넷의 깃에도 보이게 하자
+		- git commit --allow-empty
+		- esc > i > 커밋메세지입력 > esc > :wq		//w:명령어쓰기시작, q:무시하고저장
+		- git push origin 내가만든브랜치이름
+		- 새로 만든 파일 푸쉬하기  푸쉬할때 git push origin 브랜치이름  으로 해야한다!
+		
+	4)wiki
+		- 설계도, 이곳에 프로그램의 목적작성
+		- 마크다운활용하여 적기
+		
+	5)초대
+		- 세팅>콜라보>닉네임검색>초대
+		
+	6)풀 리퀘스트
+		- 머지(합병)전 단계
+		- 머지 전 팀원에게 리뷰를 요청하는것
+		- 풀 리퀘스트 창에 들어가서 compare & pull request클릭
+		- 오른쪽창에 리뷰요청할 사람, 라벨 등등을 설정
+		- file changed창에 들어가서 코드를 클릭하고 리뷰를 남길 수 있다 이때 pending이라고뜨는데 꼭 review changes를 눌러야 다른사람에게도 보인다!
+		- 코드가 완성되면 머지를 눌러 master브랜치로 옮긴다 
+		
+	7)깃 패치
+		- 6)에 의해 나의 브랜치가 마스터브랜치와 머지됨 하지만 이건 인터넷깃에서 일어난 일 내 컴퓨터에는 아직 소식 전달 안해줌  so 내 컴퓨터와 동기화를 해줘야한다
+		- git checkout master 입력하기
+		- git fetch > git pull origin master입력
+		
+	8)충돌
+		-
+		
