@@ -1,4 +1,4 @@
-#리눅스 사용전에 필요한것 
+﻿#리눅스 사용전에 필요한것 
  * Oracle VM VirtualBox
  * vagrant
 
@@ -69,4 +69,7 @@
 #리눅스에 깃 설치하고 ssh로 이용하기
   * 검색으로 적당히 리눅스에 깃을 설치한다
   * https://qiita.com/shimisunet/items/1b9568ff62a1550a931b#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB   : ssh이용하는 방법
+
 $할일이 끝나면 vagrant halt로 종료하기
+$PATH를 설정할땐 신중히
+$command not found가 뜨면 PATH를 잘 보자
