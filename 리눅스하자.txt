@@ -1,0 +1,72 @@
+#리눅스 사용전에 필요한것 
+ * Oracle VM VirtualBox
+ * vagrant
+
+#폴더에 vagrant파일 생성하기
+ * 새폴더 생성
+ * 관리자권한으로 cmd실행
+ * cmd창에서 새폴더 경로로 이동(cd 경로)
+ * vagrant init 입력
+ * 새폴더에 생긴 파일 노트패드로 열기
+ * Vagrant.configure("2") do |config|
+    config.vm.box = "centos/7"
+    config.vm.network "private_network", ip: "192.168.33.xx"    (xx는 십의자리 이내로 알아서)			
+   end   				
+   를 입력하고 저장
+ * cmd창에 vagrant up 입력
+
+#putty로 리눅스 로그인하기
+ * 리눅스에 로그인하기 위해 아이디와 ssh로 접속 
+ * 윈도우에서 ssh사용할려면 putty라는게 필요하다
+ * putty다운로드 홈페이지에서 바이너리파일로 다운받는다
+ * 배이그란트파일 ip를 복사해서 ip address에 접고 포트번호 기본값(22)로 둔다
+ * .vagrant\machines\default\virtualbox의 privatekey를 바꿔줘야한다(윈도우라서 그럼)
+ * puttygen을 다운로드
+ * puttygen을 열어서 private key를 load
+ * comment에 설명을 적는다(가상머신 이름이라던지) 
+ * save private key클릭
+ * putty 실행 > ssh 카테고리 > auth 카테고리에서 위에서 만든 개인키픽  > sassion에서 저장 > open 
+ * login as에 vagrant를 입력(디폴트아이디임)
+ * 리눅스입장~
+
+#리눅스에 Samba설치하기
+ - 삼바 설치 전 리눅스에 유저아이디를 추가해줘야 한다
+   * sudo adduser "유저아이디"
+   * sudo passwd "유저아이디"     //새로만든 유저아이디의 비밀번호를 만드는 커맨드
+   * sudo su - 		       //root로 가는 명령어
+   * sudo vi /etc/sudoers	      //유저아이디에게 sudo권한을 주기위해 가야하는곳, 아랫줄에서 allow뭐시기에 유저아이디  ALL=(ALL)	  ALL 추가
+ - 삼바설치
+   * sudo yum update	      //삼바를 설치하기 위한 준비
+   * yum install samba   	      //삼바 설치, root상태에서만 설치 가능
+   * sudo su - "유저아이디" 	      //유저아이디로 귀환
+   * sudo smbpasswd -a 아이디   //삼바용 아이디를 만든다
+   * sudo vi /etc/samba/smb.conf//설정파일에 들어가는것 일단은 건들지 않았음
+   * sudo systemctl start smb     // 삼바 시작~
+   * sudo systemctl enable smb  //가상머신 시작할때 삼바도 자동으로 시작하게 함
+   * sestatus
+   * sudo setenforce 0              //삼바쓸때 귀찮은 보안프로그램을 꺼야함 
+   * sudo vi /etc/sysconfig/selinux //스크롤 내리다보면 disable로 바꿔주고 싶은게 있다
+   * sudo systemctl restart smb  로 재시작
+   * systemctl list-unit-files --type service | grep fire
+   * sudo systemctl restart smb   //지금까지 설정한것 저장하기 위해 재시작
+
+#리눅스에 Gradle설치하기
+ - Gradle 전에 설치전에
+  * sudo yum install unzip 	     //zip파일 푸는 프로그램 설치
+  * sudo yum install wget       
+  \ yum install이 안되면 yum clean all을 쳐보자 
+  * sudo wget https://services.gradle.org/distributions/gradle-5.4.1-bin.zip -P /tmp     gradle홈페이지에서 버전 확인하고 설치하기
+  * sudo unzip -d /opt/gradle /tmp/gradle-5.4.1-bin.zip
+  * export PATH=$PATH:/opt/gradle/gradle-5.4.1/bin
+  * mkdir demo
+  * cd demo
+  * gradle init
+ - Gradle로 hello world 출력해보기
+  * gradlew파일이 있는 곳으로 이동
+  * ./gradlew build > ./gradlew tasks > ./gradlew run   입력
+  * 출력~
+
+#리눅스에 깃 설치하고 ssh로 이용하기
+  * 검색으로 적당히 리눅스에 깃을 설치한다
+  * https://qiita.com/shimisunet/items/1b9568ff62a1550a931b#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB   : ssh이용하는 방법
+$할일이 끝나면 vagrant halt로 종료하기
