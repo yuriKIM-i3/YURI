@@ -1,1 +1,1 @@
-# JSLacademy
+# Miscellaneous
