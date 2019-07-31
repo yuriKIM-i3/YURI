@@ -1,13 +1,22 @@
 # Issue Maker
 GitHub의 Issue페이지를 직접 만들어 봄으로써 여러 기술을 몸에 익힌다
+GitHubのIssueページを自ら作ってみることによって、様々な機能を身に付ける
+
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Vagrant
+* putty
+* Linux(Centos7)
+* Samba
+* Bootstrap 4
+* JSP
+* Spring Boot 2.1.4
+* Java
+* MySql
+* Mybatis
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+Issue Maker에서는 회원가입을 하고 본
 
 ## Code Examples
 Show examples of usage:
@@ -15,8 +24,8 @@ Show examples of usage:
 
 ## Features
 * 개발환경 부분
-  * 베이그란트로
-  * 푸티이용해서 ssh접속
+  * 베이그란트로 가상머신 관리
+  * 푸티이용해서 가상머신에 ssh접속
   * 삼바로 로컬환경과 대화가능
 * 프로그래밍 부분
   * 스프링부트의 웹시큐리티로 로그인 관리
