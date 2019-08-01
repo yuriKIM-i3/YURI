@@ -39,7 +39,8 @@ Issue Makerはユーザー登録、Issue作成、Label作成の機能を作る�
 
 * パスワード再入力が間違った場合
 
-* ログイン
+* ログイン  
+https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test1.gif
 
 * 既にあるメールとネームで登録をする場合
 
