@@ -4,7 +4,7 @@ GitHubのIssueページを自ら作ってみることによって、様々な機
 
 ## Technologies
 * Vagrant 2.2.5
-* putty 0.70
+* PuTTY 0.70
 * Linux(Centos7)
 * Samba 4.8.3
 * Bootstrap 4
@@ -21,7 +21,7 @@ Issue Makerはユーザー登録、Issue作成、Label作成の機能を作る�
 ## Features
 * 개발환경 부분 開発環境に関して
   * 베이그란트로 가상머신 관리 Vagrantで仮想機械を構築
-  * 푸티이용해서 가상머신에 ssh접속 Puttyを活用してLinuxにSSH接続
+  * 푸티이용해서 가상머신에 ssh접속 PuTTYを活用してLinuxにSSH接続
   * 삼바 파일 공유를 이용한 개발환경 셋팅　 Sambaでファイル共有を利用した開発環境セッティング
   * 깃허브로 코드의 버전관리 GitHubでコードのバージョンを管理
     * .gitignoreでいらないコードは挙げないようにする
