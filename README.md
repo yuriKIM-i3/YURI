@@ -1,7 +1,6 @@
 # Issue Maker
 GitHubのIssueページを自ら作ってみることによって、様々な機能を身に付ける
 
-
 ## Technologies
 * Vagrant 2.2.5
 * PuTTY 0.70
@@ -30,18 +29,19 @@ Issue Makerはユーザー登録、Issue作成、Label作成の機能を作る�
 * 프로그래밍 부분 プログラミングに関して
   * ユーザー
     * 스프링부트의 웹시큐리티로 로그인 관리 Spring Boot Securityでログイン機能を動作させる
-    * 비밀번호 암호화 기능   暗号番号を暗号化
+    * 비밀번호 암호화 기능   暗証番号を暗号化
     * user에 대한 validation 기능  ユーザー登録をする場合、validationで文字の長さや空欄を検査
     * custom validation (이 있는 커밋 링크)  custom validationでメールとネームの重複チェック機能を実装
   
 ## Screenshots
 * ユーザー登録をする時のvalidationチェック
-
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test1.gif)
 * パスワード再入力が間違った場合
-
-* ログイン
-
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test2.gif)
+* ログイン  
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test3.gif)
 * 既にあるメールとネームで登録をする場合
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test4.gif)
 
 ## Status
 Project is: _作業中_
@@ -50,4 +50,4 @@ Project is: _作業中_
 GitHubのIssue部分を参考して開発している
 
 ## Contact
-Created by [@Yuri KIM](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@Yuri KIM](https://github.com/crane93) - ご自由にご連絡ください
