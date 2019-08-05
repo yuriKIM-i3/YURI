@@ -1,18 +1,12 @@
-# Issue Maker
-GitHubのIssueページを自ら作ってみることによって、様々な機能を身に付ける
+# Aug_Calendar
+キャレンダーに
 
 ## Technologies
-* Vagrant 2.2.5
-* PuTTY 0.70
-* Linux(Centos7)
-* Samba 4.8.3
+* html
+* css
+* JavaScript
+* JQuery
 * Bootstrap 4
-* JSP 2.3
-* Gradle 5.4.1
-* Spring Boot 2.1.4
-* Java 1.8.0
-* MySql 5.7.27
-* Mybatis 3.5.0
 
 ## General info
 Issue Makerはユーザー登録、Issue作成、Label作成の機能を作る予定です
