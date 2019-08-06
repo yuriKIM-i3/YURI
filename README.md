@@ -1,5 +1,5 @@
 # Aug_Calendar
-キャレンダーに
+キャレンダー作りを通じてhtml、JavaScript、JQueryなどの基本知識を身に付ける
 
 ## Technologies
 * html
@@ -8,40 +8,22 @@
 * JQuery
 * Bootstrap 4
 
-## General info
-Issue Makerはユーザー登録、Issue作成、Label作成の機能を作る予定です
-
 ## Features
-* 개발환경 부분 開発環境に関して
-  * 베이그란트로 가상머신 관리 Vagrantで仮想機械を構築
-  * 푸티이용해서 가상머신에 ssh접속 PuTTYを活用してLinuxにSSH接続
-  * 삼바 파일 공유를 이용한 개발환경 셋팅　 Sambaでファイル共有を利用した開発環境セッティング
-  * 깃허브로 코드의 버전관리 GitHubでコードのバージョンを管理
-    * .gitignoreでいらないコードは挙げないようにする
-    * pull request作成　そして、チーム員とのレビュー
-  * Gradleでビルド自動化
-* 프로그래밍 부분 プログラミングに関して
-  * ユーザー
-    * 스프링부트의 웹시큐리티로 로그인 관리 Spring Boot Securityでログイン機能を動作させる
-    * 비밀번호 암호화 기능   暗証番号を暗号化
-    * user에 대한 validation 기능  ユーザー登録をする場合、validationで文字の長さや空欄を検査
-    * custom validation (이 있는 커밋 링크)  custom validationでメールとネームの重複チェック機能を実装
+* 機能の説明
+  * キャレンダーの日をクリックするとバックグラウンドカラーが赤になる
+  * 同じ日をまたクリックするとバックグラウンドカラーが元の色に戻る
+  * 土日をクリックするとalertメッセージに「楽しい休日！クリックした日はx日です。」と表示される
+  * クリックした日とクリックした日の回数が右に表示
+  * クリックした日に数が10個以上になるとalertメッセージに「クリックした日の数は10個を超えません」と表示される
+* 上の機能はそれぞれJavaScriptとJQueryで作成した
   
 ## Screenshots
-* ユーザー登録をする時のvalidationチェック
-  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test1.gif)
+* バックグラウンド
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/%EB%8B%AC%EB%A0%A5.gif)
 * パスワード再入力が間違った場合
-  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test2.gif)
-* ログイン  
-  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test3.gif)
-* 既にあるメールとネームで登録をする場合
-  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test4.gif)
 
 ## Status
-Project is: _作業中_
-
-## Inspiration
-GitHubのIssue部分を参考して開発している
+Project is: _作業終了_
 
 ## Contact
 Created by [@Yuri KIM](https://github.com/crane93) - ご自由にご連絡ください
