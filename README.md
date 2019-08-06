@@ -1,7 +1,6 @@
 # Issue Maker
 GitHubのIssueページを自ら作ってみることによって、様々な機能を身に付ける
 
-
 ## Technologies
 * Vagrant 2.2.5
 * PuTTY 0.70
@@ -36,13 +35,13 @@ Issue Makerはユーザー登録、Issue作成、Label作成の機能を作る�
   
 ## Screenshots
 * ユーザー登録をする時のvalidationチェック
-
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test1.gif)
 * パスワード再入力が間違った場合
-
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test2.gif)
 * ログイン  
-![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test1.gif)
-
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test3.gif)
 * 既にあるメールとネームで登録をする場合
+  ![](https://github.com/crane93/YURI/blob/gif-test/gif/signUp_test4.gif)
 
 ## Status
 Project is: _作業中_
@@ -51,4 +50,4 @@ Project is: _作業中_
 GitHubのIssue部分を参考して開発している
 
 ## Contact
-Created by [@Yuri KIM](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@Yuri KIM](https://github.com/crane93) - ご自由にご連絡ください
