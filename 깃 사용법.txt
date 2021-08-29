@@ -46,5 +46,6 @@
 		
 	8)충돌
 		-
-		
+	9)깃 배쉬로 ssh연결하기
+		- https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/
 참고: https://backlog.com/git-tutorial/kr/
