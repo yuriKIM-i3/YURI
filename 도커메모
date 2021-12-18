@@ -1,0 +1,4 @@
+1. ARG와 ENV의 차이
+ - ARG 는 빌드 시간 변수 라고도 합니다. ARG 명령어를 사용하여 Dockerfile에서 '공지된' 순간부터 이미지가 빌드되는 순간까지만 사용할 수 있습니다.
+ - ENV 변수는 ENV 명령어로 도입하자마자 빌드 중에도 사용할 수 있습니다. 그러나 ARG와 달리 최종 이미지에서 시작된 컨테이너에서도 액세스할 수 있습니다.
+ > 출처: https://vsupalov.com/docker-arg-env-variable-guide/#arg-and-env-availability
